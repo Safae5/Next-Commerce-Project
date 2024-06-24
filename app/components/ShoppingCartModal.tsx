@@ -4,7 +4,7 @@ import {
     SheetContent,
     SheetHeader,
     SheetTitle,
-  } from "@/components/ui/sheet"
+  } from "@/components/ui/sheet";
 import { useShoppingCart } from "use-shopping-cart";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -33,7 +33,7 @@ export default function ShoppingCartModal(){
             <div className="mt-8 flex-1 overflow-y-auto">
                 <ul className="-my-6 devide-y devide-gray-200">
                 { cartCount === 0 ?(
-                    <h1 className="py-6">You don't have any Items</h1>
+                    <h1 className="py-6">You dont have any Items</h1>
                 ) : (
                     <>
                     {Object.values(cartDetails ?? {}).map((entry) => (
@@ -89,7 +89,7 @@ export default function ShoppingCartModal(){
         </div>
       </SheetContent>
     </Sheet>
-    )
+    );
 }
 
 
