@@ -9,7 +9,7 @@ import { useShoppingCart } from "use-shopping-cart";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
-export default function shoppingCartModal(){
+export default function ShoppingCartModal(){
     const {cartCount, shouldDisplayCart, handleCartClick, cartDetails, removeItem, totalPrice, redirectToCheckout} = useShoppingCart();
 
     async function handleCheckoutClick(event: any) {
