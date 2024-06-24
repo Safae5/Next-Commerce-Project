@@ -1,9 +1,9 @@
-import category from "@/sanity/schemaTypes/category";
+//import category from "@/sanity/schemaTypes/category";
 import { simplifiedProduct } from "../interface";
 import { client } from "../lib/sanity";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+//import { ArrowRight } from "lucide-react";
 
 async function getData(category : string){
     const query = `*[_type == "product" && category->name == "${category}"]{
